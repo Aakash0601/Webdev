@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>tcenet</title>
+<style>
+.form{
+ text-align:center;
+ border:2px solid blue;
+ margin-left:500px;
+ margin-right:500px;
+ border-radius:5px;
+ 
+}
+.pa:hover{
+color:red;
+text-decoration:underline;
+}
+.pa{
+color:blue;
+}
+
+</style>
+<script>
+function validate()
+{
+  
+  let a=document.myform.username.value;
+  let b=document.myform.password.value;
+  if(a==""||b=="")
+  {
+    
+    alert("please enter all login credentials");
+  }
+  else if(a=="Aakash" && b=="12345") 
+  {
+    alert("sucessfull login");
+     }
+  else
+  {
+    alert("enter valid username and password");
+  }
+  return 1;
+}
+</script>
+
+</head>
+<body>
+<div style="padding:5px 30px;text-align:center;background-color:#006bb3">
+ <h1>Thiagarajar College Of Enginering </h1>
+ <h3><pre>            -where Quality and ethics matter</pre> </h3>
+ <h2>Tce NET</h2>
+</div> 
+<a style="text-align: left;" href="C:\Users\AAKASH\OneDrive\Desktop\TCE\homepage.html"">home</a>
+</br>
+</br>
+<div class="form">
+<h2>LOGIN</h2>
+</br>
+<form name="myform" method="post" onsubmit="return validate()">
+<label for="username">User-name:</label>
+  <input type="text" id="username" name="username" placeholder="enter username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="enter password"><br><br>
+ <input type="submit" value="Login">
+</form>
+  <a class="pa">Forget password?</a>
+  <br>
+  <br>
+</div>
+</body>
+</html>

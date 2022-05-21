@@ -1,0 +1,60 @@
+<html>
+<head>
+	<style type="text/css">
+		.a{
+			background-color:#ffcc99;
+		}
+		.div2{
+ 
+ border:2px solid blue;
+ margin-left:10px;
+ margin-right:10px;
+ border-radius:5px;
+ 
+}
+
+	</style>
+</head>
+<body>
+	<div class="a">
+		<br>
+		<h2 style="text-align: center;">TCE ADMISSIONS</h2>
+		<br>
+		<br>
+   </div>
+   <br><br>
+<div class="div2">
+<form class="form" onsubmit="validate()">
+	<br><br>
+	<label  for="name">&emsp;&emsp;Student Name     :   </label>
+	<input size="30" type="text" id="name" required="" ><br><br>
+	<label  for="fathername">&emsp;&emsp;Father's Name    :  </label>
+	<input size="30" type="text" id="fathername" ><br><br>
+	<label  for="mothername">&emsp;&emsp;Mother's Name:</label>
+	<input size="30" type="text" id="mothername" ><br><br>
+	<label  for="dob">&emsp;&emsp;Date-Of-Birth&nbsp;&nbsp;:  </label>
+	<input size="30" type="date" id="dob" ><br><br>
+	&emsp;&emsp;Gender  &emsp;&emsp;&emsp; :
+    <input type="radio" name="gender" id="gender" value="Male">Male
+    <input type="radio" name="gender" id="gender" value="Female">Female<br><br>
+    <lable for="mail">&emsp;&emsp;Mail-Id&emsp;&emsp;&emsp;:</lable>
+    <input type="email" name="mail" id="mail"><br><br>
+    <label for="img">&emsp;&emsp;Student image   :</label>
+    <input type="file" id="img" name="img"><br><br>
+    <label for="address">&emsp;&emsp;Address&emsp;&emsp;&emsp;:</label>
+    <input type="text" style="height: 100;" size="30" name="address" id="address"><br><br>
+    <label for="department">&emsp;&emsp;Select Course:&emsp;</label>
+    <select name="department" id="department" >
+    	<option value="" selected>please select!</option>
+    	<option value="MCA">MCA</option>
+    	<option value="BE.CS">BE.CS</option>
+    	<option value="BE.ECE">BE.ECE</option>
+    	<option value="BE.Civil">BE.Civil</option>
+    	<option value="BTech.IT">Btech.IT</option>
+    </select><br><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" name="submit" id="submit">
+
+</form >
+</div>
+</body>
+</html>
